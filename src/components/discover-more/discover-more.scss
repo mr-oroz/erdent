@@ -1,0 +1,42 @@
+@import "../../assets/scss/mixin.scss";
+
+.discover-more {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  // grid-template-rows: 600px 600px 600px;
+  grid-template-areas: "a b c";
+  gap: 11px;
+  .left {
+    grid-area: a;
+    img {
+      height: 100%;
+    }
+  }
+  .center {
+    padding: 0 25px;
+    @include PositionCenter;
+    flex-direction: column;
+    text-align: center;
+    grid-area: b;
+    background: #f3f4f6;
+    h1 {
+      @include InterBold;
+      font-size: 36px;
+      line-height: 40px;
+      color: #111827;
+    }
+    p {
+      @include InterRegular;
+      font-size: 14px;
+      line-height: 30px;
+      color: #000000;
+    }
+  }
+  .right {
+    grid-area: c;
+    img {
+      height: 100%;
+    }
+  }
+}

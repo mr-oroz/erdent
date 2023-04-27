@@ -1,0 +1,48 @@
+@import "../../assets/scss/mixin.scss";
+
+.reception {
+  @include SpaceBetween;
+  margin: 48px 0;
+  h1 {
+    @include Inter800;
+    font-size: 36px;
+    line-height: 40px;
+    color: #3d3d3f;
+  }
+  p {
+    @include InterRegular;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3d3d3f;
+  }
+}
+
+@media (max-width: 1133px) {
+  .reception {
+    p {
+      width: 400px;
+    }
+    .right {
+      width: 500px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .reception {
+    p {
+      text-align: center;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .right {
+      display: none;
+    }
+  }
+}

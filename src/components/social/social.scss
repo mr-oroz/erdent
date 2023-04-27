@@ -1,0 +1,25 @@
+@import '../../assets/scss/mixin.scss';
+
+.social {
+  display: flex;
+  align-items: center;
+  .social-icon {
+    background: #3982C1;
+    opacity: 0.5;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    a {
+      color: #fff;
+      @include PositionCenter;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

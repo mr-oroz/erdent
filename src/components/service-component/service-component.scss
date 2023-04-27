@@ -1,0 +1,32 @@
+@import "../../assets/scss/mixin.scss";
+
+.service-component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 70px;
+  &__item {
+    @include SpaceBetween;
+  }
+  &__item-text {
+    margin-left: 44px;
+    width: 422px;
+    h2,
+    p {
+      color: #27386e;
+      margin: 0;
+    }
+    h2 {
+      @include InterBold;
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 11px
+    }
+    p {
+      @include InterRegular;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}

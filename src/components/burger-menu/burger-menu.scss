@@ -1,0 +1,50 @@
+@import "../../assets/scss/mixin.scss";
+
+.burger-menu {
+  display: none;
+  &__list,
+  &__name,
+  &__btn {
+    text-align: center;
+  }
+  &__list {
+    padding: 0 43px;
+  }
+  h3 {
+    margin-top: 23px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 130%;
+    @include InterBold;
+    color: #27386e;
+  }
+  span {
+    @include InterRegular;
+    color: #999999;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  li {
+    border: 1px solid rgba(39, 56, 110, 0.2);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    cursor: pointer;
+    color: #27386e;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 112%;
+    @include InterRegular;
+    text-transform: uppercase;
+  }
+  li:hover {
+    background-color: #27386e;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1133px) {
+  .burger-menu {
+    display: block;
+  }
+}

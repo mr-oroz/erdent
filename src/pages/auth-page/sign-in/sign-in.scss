@@ -1,0 +1,13 @@
+.auth {
+  margin-bottom: 100px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

@@ -1,0 +1,105 @@
+@import "../../assets/scss/mixin.scss";
+
+.achievement {
+  margin: 50px 0;
+  @include SpaceBetween;
+  .left {
+    h1,
+    p {
+      color: #3d3d3f;
+    }
+    h1 {
+      @include Inter600;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    p {
+      @include InterRegular;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  &__text {
+    color: #40a3f8;
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 18px;
+      @include RobotoRegular;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #3d3d3f;
+      margin-bottom: 20px;
+    }
+  }
+  .rightMobile {
+    display: none;
+  }
+  .right {
+    display: grid;
+    grid-template-columns: 292px 292px;
+    grid-template-rows: 1f 1f;
+    grid-template-areas: "a b" "a c";
+    gap: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__item1 {
+    grid-area: a;
+  }
+  &__item3 {
+    grid-area: b;
+  }
+  &__item2 {
+    grid-area: c;
+  }
+}
+
+@media (max-width: 1133px) {
+  .achievement {
+    .right {
+      grid-template-columns: 200px 200px;
+    }
+    h1 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .achievement {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .left {
+      h1 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 8px;
+      }
+    }
+    &__about {
+      align-items: center;
+    }
+    .rightMobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .right {
+      display: none;
+    }
+  }
+}

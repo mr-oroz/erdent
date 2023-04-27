@@ -1,0 +1,42 @@
+@import "../../assets/scss/mixin.scss";
+
+.about-us {
+  margin: 90px 0;
+  position: relative;
+  height: 724px;
+  width: 625px;
+  margin-bottom: 48px;
+  img {
+    position: absolute;
+    z-index: 1;
+  }
+  &__text {
+    position: absolute;
+    width: 624px;
+    // height: 508px;
+    background-color: #F1F1F1;
+    padding: 45px 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 90% !important;
+    z-index: 2;
+    p,
+    h1,
+    h3 {
+      color: #3D3D3F;;
+    }
+    p {
+      @include InterRegular;
+      font-size: 16px;
+    }
+    h1 {
+      @include RobotoRegular;
+      font-size: 36px;
+      line-height: 40px;
+    }
+    h3 {
+      @include InterRegular;
+      font-size: 18px;
+    }
+  }
+}

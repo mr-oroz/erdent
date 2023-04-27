@@ -1,0 +1,57 @@
+@import './font.scss';
+
+@mixin RobotoBold {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin RobotoRegular{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin RobotoItalic{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin InterBold{
+  font-family: 'Inter';
+  font-weight: bold;
+  font-style: normal;
+}
+@mixin Inter800{
+  font-family: 'Inter';
+  font-weight: 800;
+  font-style: normal;
+}
+@mixin Inter600{
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: normal;
+}
+@mixin InterRegular{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin PositionCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin SpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin PositionCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

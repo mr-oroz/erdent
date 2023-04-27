@@ -1,0 +1,29 @@
+@import "../../assets/scss/mixin.scss";
+
+.home-page {
+  
+}
+.our-doctors {
+  .our-doctors-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h1 {
+      @include RobotoBold;
+      font-size: 42px;
+      line-height: 49px;
+      color: #3d3d3f;
+    }
+    p {
+      @include RobotoRegular;
+      max-width: 600px;
+      font-size: 18px;
+      line-height: 30px;
+      color: rgba(61, 61, 63, 0.7);
+    }
+  }
+  .our-doctor-items {
+    @include SpaceBetween;
+  }
+}
